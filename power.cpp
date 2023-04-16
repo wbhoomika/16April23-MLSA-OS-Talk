@@ -1,42 +1,20 @@
 #include<iostream>
-using namespace std;
-/* 
-// without functions
-int main()
-{
-    int a, b;
-    cout << "Enter the number: ";
-    cin >> a;
-    cout << "Enter the power: ";
-    cin >> b;
-    int ans = 1;
-    for (int i = 1; i <= b; i++)
-    {
-        ans = ans * a;
-    }
-    cout << "Answer: " << ans << endl;
-    return 0;
-    int a, b;
-    cout << "Enter the number: ";
-    cin >> a;
-    cout << "Enter the power: ";
-    cin >> b;
-} */
 
-// with functions
+using namespace std;
+
 int power()
 {
-    int a,b;
+    int number, power;
     cout << "Enter the number: ";
-    cin >> a;
+    cin >> number;
     cout << "Enter the power: ";
-    cin >> b;
-    int ans = 1;
-    for (int i = 1; i <= b; i++)
+    cin >> power;
+    int answer = 1;
+    for(int i = 0; i < power; i++)
     {
-        ans = ans * a;
+        answer *= number;
     }
-    return ans;
+    return answer;
 }
 int main()
 {
