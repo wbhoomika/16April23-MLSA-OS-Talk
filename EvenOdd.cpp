@@ -1,14 +1,12 @@
 #include<iostream>
+
 using namespace std;
-// 1 -> Even
-// 0 -> Odd
+
 bool isEven(int a)
 {
-    // odd
-    if(a & 1)
-        return 0;
-    // even
-    return 1;
+    if (a % 2)
+        return false;
+    return true;    
 }
 int main()
 {
