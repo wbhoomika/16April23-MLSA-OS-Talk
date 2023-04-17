@@ -4,17 +4,22 @@ using namespace std;
 
 bool isEven(int a)
 {
-    if (a % 2)
-        return false;
-    return true;    
+    if (a % 2==0){
+        return true;
+    }
+    else{
+        return false;   
+    }
+        
+     
 }
 int main()
 {
     int num;
-    cout << "Enter a number: ";
+    cout << "Enter the number to be checked: ";
     cin >> num;
-    if (isEven(num))
-        cout << "Number is Even" << endl;
+    if (isEven(num)==true)
+        cout << "Entered number is Even" << endl;
     else 
-        cout << "Number is Odd" << endl;
+        cout << "Entered number is Odd" << endl;
 }
